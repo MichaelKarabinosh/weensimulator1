@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Weed Simulator</title>
+</head>
+<body>
+
+<h2>Weed Infection Simulator</h2>
+
+<form method="post">
+    <label>Enter Infection Pattern:</label><br>
+    <input type="text" name="pattern" style="width:400px"
+           placeholder="10101,11000,00W00,00011,00000">
+    <br><br>
+
+    <button type="submit">Run Simulation</button>
+</form>
+
+{% if output %}
+<h3>Output</h3>
+<pre>{{output}}</pre>
+{% endif %}
+
+</body>
+</html>
